@@ -1,0 +1,9 @@
+extends Node
+
+enum BUTTONS {
+	SHOP_IN_MAIN, PLAY_IN_MAIN, SETTINGS_IN_MAIN,
+	BACK_IN_SHOP, BACK_IN_SETTINGS, BACK_IN_LEVELS,
+	LOAD_LEVEL_IN_LEVELS
+}
+
+var game_state: GameState = null
