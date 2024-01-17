@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Project RB"
+config/name="Organization Project"
 run/main_scene="res://main/Main.tscn"
 config/icon="res://icon.png"
 
