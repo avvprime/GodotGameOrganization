@@ -1,11 +1,9 @@
-class_name GameState extends Node
+class_name GameState
 
 var StateManager: Node = null
 var UIManager: Node = null
 var GameManager: Node = null
 
-func _ready() -> void:
-	StateManager = owner
 
 func enter() -> void:
 	pass

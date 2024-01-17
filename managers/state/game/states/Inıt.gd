@@ -7,8 +7,9 @@ func _ready() -> void:
 func enter() -> void:
 	print("GAME INIT STATE STARTED")
 	UIManager.on_game_init_state_enter()
-	yield(get_tree().create_timer(1.0), "timeout")
-	StateManager.change_state(StateManager.States.MENU)
+	
+	var callback_func: FuncRef = funcref(StateManager, "change_state")
+	GameManager.wait_for_a_while(callback_func, 1.0, StateManager.States.MENU)
 
 func exit() -> void:
 	UIManager.on_game_init_state_exit()
